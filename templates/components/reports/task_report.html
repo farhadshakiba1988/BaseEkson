@@ -1,0 +1,189 @@
+{% load static %}
+{% block task_report %}
+    <div class="col-span-12 xxl:col-span-3">
+        <div class="box">
+            <div class="box-header flex justify-between">
+                <div class="box-title my-auto">
+                    گزارش تسک ها
+                </div>
+                <div class=" block ltr:ml-auto rtl:mr-auto my-auto">
+                    <button type="button"
+                            class="ti-btn m-0 rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                        View All
+                    </button>
+                </div>
+            </div>
+            <div class="box-body scrollablee">
+                <ul class="list-unstyled mb-0 crm-recent-activity">
+                    <li class="crm-recent-activity-content">
+                        <div class="flex items-top">
+                            <div class="ltr:mr-3 rtl:ml-3">
+                              <span class="avatar w-5 h-5 text-primary rounded-full inline-flex">
+                                  <i class="ri-checkbox-blank-circle-fill leading-none text-xs opacity-50 mx-auto my-auto"></i>
+                              </span>
+                            </div>
+                            <div class="crm-timeline-content">
+                                <span class="font-semibold text-dark dark:text-white">Update of calendar events &amp;</span><span><a
+                                    href="javascript:void(0);"
+                                    class="text-primary font-semibold"> Added new events in next week.</a></span>
+                            </div>
+                            <div class="flex-auto text-end">
+                                <span class="block text-gray-500 dark:text-white/70 text-xs opacity-70">4:45PM</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="crm-recent-activity-content">
+                        <div class="flex items-top">
+                            <div class="ltr:mr-3 rtl:ml-3">
+                              <span class="avatar w-5 h-5 text-secondary rounded-full inline-flex">
+                                  <i class="ri-checkbox-blank-circle-fill leading-none text-xs opacity-50 mx-auto my-auto"></i>
+                              </span>
+                            </div>
+                            <div class="crm-timeline-content">
+                                                <span>New theme for <span
+                                                        class="font-semibold text-dark dark:text-white">Spruko Website</span> completed</span>
+                                <span class="block fs-12 text-muted">Lorem ipsum, dolor sit amet.</span>
+                            </div>
+                            <div class="flex-auto text-end">
+                                <span class="block text-gray-500 dark:text-white/70 text-xs opacity-70">3 hrs</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="crm-recent-activity-content">
+                        <div class="flex items-top">
+                            <div class="ltr:mr-3 rtl:ml-3">
+                              <span class="avatar w-5 h-5 text-success rounded-full inline-flex">
+                                  <i class="ri-checkbox-blank-circle-fill leading-none text-xs opacity-50 mx-auto my-auto"></i>
+                              </span>
+                            </div>
+                            <div class="crm-timeline-content">
+                                            <span>Created a <span
+                                                    class="text-success font-semibold">New Task</span> today <span
+                                                    class="avatar w-5 h-5 bg-purple-transparent rounded-full inline-flex ms-1"><i
+                                                    class="ri-add-fill text-purple fs-12"></i></span></span>
+                            </div>
+                            <div class="flex-auto text-end">
+                                <span class="block text-gray-500 dark:text-white/70 text-xs opacity-70">22 hrs</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="crm-recent-activity-content">
+                        <div class="flex items-top">
+                            <div class="ltr:mr-3 rtl:ml-3">
+                              <span class="avatar w-5 h-5 text-danger rounded-full inline-flex">
+                                  <i class="ri-checkbox-blank-circle-fill leading-none text-xs opacity-50 mx-auto my-auto"></i>
+                              </span>
+                            </div>
+                            <div class="crm-timeline-content">
+                                            <span>New member <span
+                                                    class="badge bg-primary/20 text-primary p-1 rounded-sm">@andreas gurrero</span> added today to AI Summit.</span>
+                            </div>
+                            <div class="flex-auto text-end">
+                                <span class="block text-gray-500 dark:text-white/70 text-xs opacity-70">Today</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="crm-recent-activity-content">
+                        <div class="flex items-top">
+                            <div class="ltr:mr-3 rtl:ml-3">
+                              <span class="avatar w-5 h-5 text-warning rounded-full inline-flex">
+                                  <i class="ri-checkbox-blank-circle-fill leading-none text-xs opacity-50 mx-auto my-auto"></i>
+                              </span>
+                            </div>
+                            <div class="crm-timeline-content">
+                                <span>32 New people joined summit.</span>
+                            </div>
+                            <div class="flex-auto text-end">
+                                <span class="block text-gray-500 dark:text-white/70 text-xs opacity-70">22 hrs</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="crm-recent-activity-content">
+                        <div class="flex items-top">
+                            <div class="ltr:mr-3 rtl:ml-3">
+                              <span class="avatar w-5 h-5 text-info rounded-full inline-flex">
+                                  <i class="ri-checkbox-blank-circle-fill leading-none text-xs opacity-50 mx-auto my-auto"></i>
+                              </span>
+                            </div>
+                            <div class="crm-timeline-content">
+                                            <span>Neon Tarly added <span
+                                                    class="text-info font-semibold">Robert Bright</span> to AI summit project.</span>
+                            </div>
+                            <div class="flex-auto text-end">
+                                <span class="block text-gray-500 dark:text-white/70 text-xs opacity-70">12 hrs</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="crm-recent-activity-content">
+                        <div class="flex items-top">
+                            <div class="ltr:mr-3 rtl:ml-3">
+                              <span class="avatar w-5 h-5 text-pink-500 rounded-full inline-flex">
+                                  <i class="ri-checkbox-blank-circle-fill leading-none text-xs opacity-50 mx-auto my-auto"></i>
+                              </span>
+                            </div>
+                            <div class="crm-timeline-content">
+                                            <span>Replied to new support request <i
+                                                    class="ri-checkbox-circle-line text-success fs-16 align-middle"></i></span>
+                            </div>
+                            <div class="flex-auto text-end">
+                                <span class="block text-gray-500 dark:text-white/70 text-xs opacity-70">4 hrs</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="crm-recent-activity-content">
+                        <div class="flex items-top">
+                            <div class="ltr:mr-3 rtl:ml-3">
+                              <span class="avatar w-5 h-5 text-primary rounded-full inline-flex">
+                                  <i class="ri-checkbox-blank-circle-fill leading-none text-xs opacity-50 mx-auto my-auto"></i>
+                              </span>
+                            </div>
+                            <div class="crm-timeline-content">
+                                <span class="font-semibold text-dark dark:text-white">Update of calendar events &amp;</span><span><a
+                                    href="javascript:void(0);"
+                                    class="text-primary font-semibold"> Added new events in next week.</a></span>
+                            </div>
+                            <div class="flex-auto text-end">
+                                <span class="block text-gray-500 dark:text-white/70 text-xs opacity-70">4:45PM</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="crm-recent-activity-content">
+                        <div class="flex items-top">
+                            <div class="ltr:mr-3 rtl:ml-3">
+                              <span class="avatar w-5 h-5 text-secondary rounded-full inline-flex">
+                                  <i class="ri-checkbox-blank-circle-fill leading-none text-xs opacity-50 mx-auto my-auto"></i>
+                              </span>
+                            </div>
+                            <div class="crm-timeline-content">
+                                                <span>New theme for <span
+                                                        class="font-semibold text-dark dark:text-white">Spruko Website</span> completed</span>
+                                <span class="block fs-12 text-muted">Lorem ipsum, dolor sit amet.</span>
+                            </div>
+                            <div class="flex-auto text-end">
+                                <span class="block text-gray-500 dark:text-white/70 text-xs opacity-70">3 hrs</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="crm-recent-activity-content">
+                        <div class="flex items-top">
+                            <div class="ltr:mr-3 rtl:ml-3">
+                              <span class="avatar w-5 h-5 text-success rounded-full inline-flex">
+                                  <i class="ri-checkbox-blank-circle-fill leading-none text-xs opacity-50 mx-auto my-auto"></i>
+                              </span>
+                            </div>
+                            <div class="crm-timeline-content">
+                                            <span>Created a <span
+                                                    class="text-success font-semibold">New Task</span> today <span
+                                                    class="avatar w-5 h-5 bg-purple-transparent rounded-full inline-flex ms-1"><i
+                                                    class="ri-add-fill text-purple fs-12"></i></span></span>
+                            </div>
+                            <div class="flex-auto text-end">
+                                <span class="block text-gray-500 dark:text-white/70 text-xs opacity-70">22 hrs</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}

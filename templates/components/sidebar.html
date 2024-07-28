@@ -1,0 +1,940 @@
+{% load static %}
+{% block sidebar %}
+    <aside class="app-sidebar" id="sidebar">
+
+        <!-- Start::main-sidebar-header -->
+        <div class="main-sidebar-header">
+            <a href="#" class="header-logo">
+                <img src="{% static 'assets/img/brand-logos/desktop-logo.png' %}"
+                     alt="logo"
+                     class="main-logo desktop-logo">
+                <img src="{% static 'assets/img/brand-logos/toggle-logo.png' %}"
+                     alt="logo"
+                     class="main-logo toggle-logo">
+                <img src="{% static 'assets/img/brand-logos/desktop-dark.png' %}"
+                     alt="logo"
+                     class="main-logo desktop-dark">
+                <img src="{% static 'assets/img/brand-logos/toggle-dark.png' %}"
+                     alt="logo"
+                     class="main-logo toggle-dark">
+            </a>
+        </div>
+        <!-- End::main-sidebar-header -->
+
+        <!-- Start::main-sidebar -->
+        <div class="main-sidebar " id="sidebar-scroll">
+
+            <!-- Start::nav -->
+            <nav class="main-menu-container nav nav-pills flex-column sub-open">
+                <div class="slide-left" id="slide-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191"
+                         width="24"
+                         height="24" viewBox="0 0 24 24">
+                        <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path>
+                    </svg>
+                </div>
+                <ul class="main-menu">
+                    <!-- Start::slide__category -->
+                    <li class="slide__category"><span
+                            class="category-name">Main</span>
+                    </li>
+                    <!-- End::slide__category -->
+
+                    <!-- Start::slide -->
+                    <li class="slide  has-sub">
+                        <a href="javascript:void(0);"
+                           class="side-menu__item">
+                            <i class="ri-home-8-line side-menu__icon"></i>
+                            <span class="side-menu__label">Dashboards</span>
+                            <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                        </a>
+                        <ul class="slide-menu child1">
+                            <li class="slide side-menu__label1"><a
+                                    href="javascript:void(0)">Dashboards</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/index.html"
+                                    class="side-menu__item">Sales</a></li>
+                            <li class="slide"><a
+                                    href="../test_temp/index2.html"
+                                    class="side-menu__item">Ecommerce</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/index3.html"
+                                    class="side-menu__item">Crypto</a></li>
+                            <li class="slide"><a
+                                    href="../test_temp/index4.html"
+                                    class="side-menu__item">Jobs</a></li>
+                            <li class="slide"><a
+                                    href="../test_temp/index5.html"
+                                    class="side-menu__item">NFT</a></li>
+                            <li class="slide"><a
+                                    href="../test_temp/index6.html"
+                                    class="side-menu__item">Analytics</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/index7.html"
+                                    class="side-menu__item">Projects</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/index8.html"
+                                    class="side-menu__item">HRM</a></li>
+                            <li class="slide"><a href="index9.html"
+                                                 class="side-menu__item">CRM</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/index10.html"
+                                    class="side-menu__item">Personal</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/index11.html"
+                                    class="side-menu__item">Stocks</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/index12.html"
+                                    class="side-menu__item">Course</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- End::slide -->
+
+                    <!-- Start::slide -->
+                    <li class="slide">
+                        <a href="../test_temp/widgets.html"
+                           class="side-menu__item">
+                            <i class="ri-apps-2-line side-menu__icon"></i>
+                            <span class="side-menu__label">Widgets</span>
+                        </a>
+                    </li>
+                    <!-- End::slide -->
+
+                    <!-- Start::slide__category -->
+                    <li class="slide__category"><span class="category-name">General</span>
+                    </li>
+                    <!-- End::slide__category -->
+
+                    <!-- Start::slide -->
+                    <li class="slide has-sub">
+                        <a href="javascript:void(0);"
+                           class="side-menu__item">
+                            <i class="ri-inbox-line side-menu__icon"></i>
+                            <span class="side-menu__label">Components</span>
+                            <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                        </a>
+                        <ul class="slide-menu child1">
+                            <li class="slide side-menu__label1"><a
+                                    href="javascript:void(0)">Components</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/accordion.html"
+                                    class="side-menu__item">Accordion</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/alerts.html"
+                                    class="side-menu__item">Alerts</a></li>
+                            <li class="slide"><a
+                                    href="../test_temp/avatars.html"
+                                    class="side-menu__item">Avatars</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/badges.html"
+                                    class="side-menu__item">Badges</a></li>
+                            <li class="slide"><a
+                                    href="../test_temp/blockquotes.html"
+                                    class="side-menu__item">Blockquotes</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/buttons.html"
+                                    class="side-menu__item">Buttons</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/cards.html"
+                                    class="side-menu__item">Cards</a></li>
+                            <li class="slide"><a
+                                    href="../test_temp/collapse.html"
+                                    class="side-menu__item">Collapse</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/list-group.html"
+                                    class="side-menu__item">ListGroup</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/list.html"
+                                    class="side-menu__item">List</a></li>
+                            <li class="slide"><a
+                                    href="../test_temp/indicators.html"
+                                    class="side-menu__item">Indicators</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/progress.html"
+                                    class="side-menu__item">Progress</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/skeleton.html"
+                                    class="side-menu__item">Skeleton</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/spinners.html"
+                                    class="side-menu__item">Spinners</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/toast.html"
+                                    class="side-menu__item">Toast</a></li>
+                        </ul>
+                    </li>
+                    <!-- End::slide -->
+
+                    <!-- Start::slide -->
+                    <li class="slide has-sub">
+                        <a href="javascript:void(0);"
+                           class="side-menu__item">
+                            <i class="ri-cpu-line side-menu__icon"></i>
+                            <span class="side-menu__label">Elements</span>
+                            <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                        </a>
+                        <ul class="slide-menu child1">
+                            <li class="slide side-menu__label1"><a
+                                    href="javascript:void(0)">Elements</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/navbar.html"
+                                    class="side-menu__item">Navbar</a></li>
+                            <li class="slide"><a
+                                    href="../test_temp/mega-menu.html"
+                                    class="side-menu__item">MegaMenu</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/tabs.html"
+                                    class="side-menu__item">Nav
+                                &amp;Tabs</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/scrollspy.html"
+                                    class="side-menu__item">Scrollspy</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/breadcrumb.html"
+                                    class="side-menu__item">Breadcrumb</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/pagination.html"
+                                    class="side-menu__item">Pagination</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/grid.html"
+                                    class="side-menu__item">Grids</a></li>
+                            <li class="slide"><a
+                                    href="../test_temp/columns.html"
+                                    class="side-menu__item"> Columns</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- End::slide -->
+
+                    <!-- Start::slide -->
+                    <li class="slide has-sub">
+                        <a href="javascript:void(0);"
+                           class="side-menu__item">
+                            <i class="ri-file-text-line side-menu__icon"></i>
+                            <span class="side-menu__label">Forms</span>
+                            <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                        </a>
+                        <ul class="slide-menu child1">
+                            <li class="slide side-menu__label1"><a
+                                    href="javascript:void(0)">Forms</a></li>
+                            <li class="slide"><a
+                                    href="../test_temp/form-elements.html"
+                                    class="side-menu__item">FormElements</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/advanced-forms.html"
+                                    class="side-menu__item">AdvancedForms</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/form-input-group.html"
+                                    class="side-menu__item">Form-Input-Group</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/file-upload.html"
+                                    class="side-menu__item">File
+                                Uploads</a></li>
+                            <li class="slide"><a
+                                    href="../test_temp/form-checkbox.html"
+                                    class="side-menu__item">Form-Checkbox</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/form-radio.html"
+                                    class="side-menu__item">Form-Radio</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/form-switch.html"
+                                    class="side-menu__item">Form-Switch</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/form-select.html"
+                                    class="side-menu__item">Form-Select</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/form-layouts.html"
+                                    class="side-menu__item">Form-Layouts</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/form-validations.html"
+                                    class="side-menu__item">Form-Validations</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/quil-editor.html"
+                                    class="side-menu__item">Form-Editor</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- End::slide -->
+
+                    <!-- Start::slide -->
+                    <li class="slide has-sub">
+                        <a href="javascript:void(0);"
+                           class="side-menu__item">
+                            <i class="ri-stack-line side-menu__icon"></i>
+                            <span class="side-menu__label">Advanced Ui</span>
+                            <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                        </a>
+                        <ul class="slide-menu child1">
+                            <li class="slide side-menu__label1"><a
+                                    href="javascript:void(0)">Advanced
+                                Ui</a></li>
+                            <li class="slide"><a
+                                    href="../test_temp/rangeslider.html"
+                                    class="side-menu__item">Rangeslider</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/calendar.html"
+                                    class="side-menu__item">Calendar</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/carousel.html"
+                                    class="side-menu__item">Carousel</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/gallery.html"
+                                    class="side-menu__item">Gallery</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/sweetalert.html"
+                                    class="side-menu__item">Sweetalert</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/ratings.html"
+                                    class="side-menu__item">Rating</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/draggable.html"
+                                    class="side-menu__item">Draggable
+                                Cards</a></li>
+                            <li class="slide"><a
+                                    href="../test_temp/notifications.html"
+                                    class="side-menu__item">Notifications</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/treeview.html"
+                                    class="side-menu__item">Treeview</a>
+                            </li>
+                            <li class="slide has-sub"><a
+                                    href="javascript:void(0);"
+                                    class="side-menu__item">File manager<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                                <ul class="slide-menu child2">
+                                    <li class="slide"><a
+                                            href="../test_temp/filemanager.html"
+                                            class="side-menu__item">File
+                                        manager</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/filemanager-list.html"
+                                            class="side-menu__item">File
+                                        manager
+                                        List</a></li>
+                                    <li class="slide"><a
+                                            href="../test_temp/file-details.html"
+                                            class="side-menu__item">File
+                                        Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- End::slide -->
+
+                    <!-- Start::slide -->
+                    <li class="slide has-sub">
+                        <a href="javascript:void(0);"
+                           class="side-menu__item">
+                            <i class="ri-file-list-3-line side-menu__icon"></i>
+                            <span class="side-menu__label">Basic Ui</span>
+                            <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                        </a>
+                        <ul class="slide-menu child1">
+                            <li class="slide side-menu__label1"><a
+                                    href="javascript:void(0)">Basic Ui</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/dropdown.html"
+                                    class="side-menu__item">Dropdown</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/modal.html"
+                                    class="side-menu__item">Modal</a></li>
+                            <li class="slide"><a
+                                    href="../test_temp/offcanvas.html"
+                                    class="side-menu__item">Offcanvas</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/tooltip-popovers.html"
+                                    class="side-menu__item">Tooltips
+                                &amp;
+                                Popovers</a></li>
+                            <li class="slide has-sub"><a
+                                    href="javascript:void(0);"
+                                    class="side-menu__item">Tables<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                                <ul class="slide-menu child2">
+                                    <li class="slide"><a
+                                            href="../test_temp/tables.html"
+                                            class="side-menu__item">BasicTables</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/datatables.html"
+                                            class="side-menu__item">DataTables</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/edittable.html"
+                                            class="side-menu__item">Edit
+                                        Table</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- End::slide -->
+
+
+                    <!-- Start::slide__category -->
+                    <li class="slide__category"><span class="category-name">Levels</span>
+                    </li>
+                    <!-- End::slide__category -->
+
+                    <!-- Start::slide -->
+                    <li class="slide has-sub">
+                        <a href="javascript:void(0);"
+                           class="side-menu__item">
+                            <i class="ri-node-tree side-menu__icon"></i>
+                            <span class="side-menu__label">NestedMenu</span>
+                            <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                        </a>
+                        <ul class="slide-menu child1">
+                            <li class="slide side-menu__label1"><a
+                                    href="javascript:void(0)">Nested
+                                Menu</a></li>
+                            <li class="slide"><a href="javascript:void(0);"
+                                                 class="side-menu__item">Nested-1</a>
+                            </li>
+                            <li class="slide has-sub"><a
+                                    href="javascript:void(0);"
+                                    class="side-menu__item">Nested-2<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                                <ul class="slide-menu child2">
+                                    <li class="slide"><a
+                                            href="javascript:void(0);"
+                                            class="side-menu__item">Nested-2-1</a>
+                                    </li>
+                                    <li class="slide has-sub"><a
+                                            href="javascript:void(0);"
+                                            class="side-menu__item">Nested-2-2<i
+                                            class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                                        <ul class="slide-menu child3">
+                                            <li class="slide"><a
+                                                    href="javascript:void(0);"
+                                                    class="side-menu__item">Nested-2-2-1</a>
+                                            </li>
+                                            <li class="slide"><a
+                                                    href="javascript:void(0);"
+                                                    class="side-menu__item">Nested-2-2-2</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- End::slide -->
+
+                    <!-- Start::slide__category -->
+                    <li class="slide__category"><span class="category-name">Maps &amp; charts</span>
+                    </li>
+                    <!-- End::slide__category -->
+
+                    <!-- Start::slide -->
+                    <li class="slide has-sub">
+                        <a href="javascript:void(0);"
+                           class="side-menu__item">
+                            <i class="ri-map-pin-user-line side-menu__icon"></i>
+                            <span class="side-menu__label">Maps</span>
+                            <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                        </a>
+                        <ul class="slide-menu child1">
+                            <li class="slide side-menu__label1"><a
+                                    href="javascript:void(0)">Maps</a></li>
+                            <li class="slide"><a
+                                    href="../test_temp/google-maps.html"
+                                    class="side-menu__item">Google
+                                Maps</a></li>
+                            <li class="slide"><a
+                                    href="../test_temp/leaflet-maps.html"
+                                    class="side-menu__item">Leaflet
+                                Maps</a></li>
+                            <li class="slide"><a
+                                    href="../test_temp/vector-maps.html"
+                                    class="side-menu__item">Vector
+                                Maps</a></li>
+                        </ul>
+                    </li>
+                    <!-- End::slide -->
+
+                    <!-- Start::slide -->
+                    <li class="slide has-sub">
+                        <a href="javascript:void(0);"
+                           class="side-menu__item">
+                            <i class="ri-pie-chart-2-line side-menu__icon"></i>
+                            <span class="side-menu__label">Charts</span>
+                            <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                        </a>
+                        <ul class="slide-menu child1">
+                            <li class="slide side-menu__label1"><a
+                                    href="javascript:void(0)">Charts</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/apex-charts.html"
+                                    class="side-menu__item">ApexCharts</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/chartjs.html"
+                                    class="side-menu__item">ChartJS</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/echartjs.html"
+                                    class="side-menu__item">EchartJs</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- End::slide -->
+
+
+                    <!-- Start::slide__category -->
+                    <li class="slide__category"><span class="category-name">Pages</span>
+                    </li>
+                    <!-- End::slide__category -->
+
+                    <!-- Start::slide -->
+                    <li class="slide has-sub">
+                        <a href="javascript:void(0);"
+                           class="side-menu__item">
+                            <i class="ri-book-open-line side-menu__icon"></i>
+                            <span class="side-menu__label">Pages</span>
+                            <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                        </a>
+                        <ul class="slide-menu child1">
+                            <li class="slide side-menu__label1"><a
+                                    href="javascript:void(0)">Pages</a></li>
+                            <li class="slide has-sub"><a
+                                    href="javascript:void(0);"
+                                    class="side-menu__item">Profile<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                                <ul class="slide-menu child2">
+                                    <li class="slide"><a
+                                            href="../test_temp/profile.html"
+                                            class="side-menu__item">Home</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/profile-settings.html"
+                                            class="side-menu__item">Profile
+                                        Settings</a></li>
+                                </ul>
+                            </li>
+                            <li class="slide has-sub"><a
+                                    href="javascript:void(0);"
+                                    class="side-menu__item">Invoice<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                                <ul class="slide-menu child2">
+                                    <li class="slide"><a
+                                            href="../test_temp/invoice-list.html"
+                                            class="side-menu__item">Invoice
+                                        List</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/invoice.html"
+                                            class="side-menu__item">Invoice
+                                        Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide has-sub"><a
+                                    href="javascript:void(0);"
+                                    class="side-menu__item">Blog<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                                <ul class="slide-menu child2">
+                                    <li class="slide"><a
+                                            href="../test_temp/blog.html"
+                                            class="side-menu__item">Blog</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/blog-details.html"
+                                            class="side-menu__item">Blog
+                                        Details</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/blog-edit.html"
+                                            class="side-menu__item">Edit
+                                        Blog</a></li>
+                                </ul>
+                            </li>
+                            <li class="slide has-sub"><a
+                                    href="javascript:void(0);"
+                                    class="side-menu__item">Mail<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                                <ul class="slide-menu child2">
+                                    <li class="slide"><a
+                                            href="../test_temp/mail-inbox.html"
+                                            class="side-menu__item">Mail</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/chat.html"
+                                            class="side-menu__item">Chat</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/mail-settings.html"
+                                            class="side-menu__item">Mail-settings</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide has-sub"><a
+                                    href="javascript:void(0);"
+                                    class="side-menu__item">Ecommerce<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                                <ul class="slide-menu child2">
+                                    <li class="slide"><a
+                                            href="../test_temp/products.html"
+                                            class="side-menu__item">Products</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/product-list.html"
+                                            class="side-menu__item">Product
+                                        list</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/add-product.html"
+                                            class="side-menu__item">Add
+                                        Product</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/edit-product.html"
+                                            class="side-menu__item">Edit
+                                        Product</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/products-details.html"
+                                            class="side-menu__item">Products-Details</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/cart.html"
+                                            class="side-menu__item">Cart</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/checkout.html"
+                                            class="side-menu__item">Checkout</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/orders.html"
+                                            class="side-menu__item">Orders</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/order-details.html"
+                                            class="side-menu__item">Order
+                                        Details</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/wishlist.html"
+                                            class="side-menu__item">Whislist</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/about.html"
+                                    class="side-menu__item">About Us</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/contacts.html"
+                                    class="side-menu__item">Contacts</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/pricing.html"
+                                    class="side-menu__item">Pricing
+                                tables</a></li>
+                            <li class="slide"><a
+                                    href="../test_temp/timeline.html"
+                                    class="side-menu__item">Timeline</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/team.html"
+                                    class="side-menu__item">Team</a></li>
+                            <li class="slide"><a
+                                    href="../test_temp/landing.html"
+                                    class="side-menu__item">Landing</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/todo.html"
+                                    class="side-menu__item">Todo list</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/tasks.html"
+                                    class="side-menu__item">Tasks</a></li>
+                            <li class="slide"><a
+                                    href="../test_temp/reviews.html"
+                                    class="side-menu__item">Reviews</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/faqs.html"
+                                    class="side-menu__item">Faq's</a></li>
+                            <li class="slide"><a
+                                    href="../test_temp/contactus.html"
+                                    class="side-menu__item">Contact
+                                Us</a></li>
+                            <li class="slide"><a
+                                    href="../test_temp/terms.html"
+                                    class="side-menu__item">Terms&amp;conditions</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/empty.html"
+                                    class="side-menu__item">Empty</a></li>
+                        </ul>
+                    </li>
+                    <!-- End::slide -->
+
+                    <!-- Start::slide -->
+                    <li class="slide has-sub">
+                        <a href="javascript:void(0);"
+                           class="side-menu__item">
+                            <i class="ri-camera-lens-line side-menu__icon"></i>
+                            <span class="side-menu__label">Icons</span>
+                            <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                        </a>
+                        <ul class="slide-menu child1">
+                            <li class="slide side-menu__label1"><a
+                                    href="javascript:void(0)">Icons</a></li>
+                            <li class="slide"><a
+                                    href="../test_temp/tabler-icons.html"
+                                    class="side-menu__item">Tabler
+                                Icons</a></li>
+                            <li class="slide"><a
+                                    href="../test_temp/remix-icons.html"
+                                    class="side-menu__item">Remix
+                                Icons</a></li>
+                        </ul>
+                    </li>
+                    <!-- End::slide -->
+
+                    <!-- Start::slide -->
+                    <li class="slide has-sub">
+                        <a href="javascript:void(0);"
+                           class="side-menu__item">
+                            <i class="ri-error-warning-line side-menu__icon"></i>
+                            <span class="side-menu__label">Authentication</span>
+                            <i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+                        </a>
+                        <ul class="slide-menu child1">
+                            <li class="slide side-menu__label1"><a
+                                    href="javascript:void(0)">Authentication</a>
+                            </li>
+                            <li class="slide has-sub"><a
+                                    href="javascript:void(0);"
+                                    class="side-menu__item">Sign-In<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                                <ul class="slide-menu child2">
+                                    <li class="slide"><a
+                                            href="../test_temp/signin.html"
+                                            class="side-menu__item">Basic</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/signin-cover.html"
+                                            class="side-menu__item">Cover-1</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/signin-cover2.html"
+                                            class="side-menu__item">Cover-2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide has-sub"><a
+                                    href="javascript:void(0);"
+                                    class="side-menu__item">Sign-Up<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                                <ul class="slide-menu child2">
+                                    <li class="slide"><a
+                                            href="../test_temp/signup.html"
+                                            class="side-menu__item">Basic</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/signup-cover.html"
+                                            class="side-menu__item">Cover-1</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/signup-cover2.html"
+                                            class="side-menu__item">Cover-2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide has-sub"><a
+                                    href="javascript:void(0);"
+                                    class="side-menu__item">Create
+                                Password<i
+                                        class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                                <ul class="slide-menu child2">
+                                    <li class="slide"><a
+                                            href="../test_temp/createpassword.html"
+                                            class="side-menu__item">Basic</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/createpassword-cover.html"
+                                            class="side-menu__item">Cover-1</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/createpassword-cover2.html"
+                                            class="side-menu__item">Cover-2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide has-sub"><a
+                                    href="javascript:void(0);"
+                                    class="side-menu__item">Forgot
+                                Password<i
+                                        class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                                <ul class="slide-menu child2">
+                                    <li class="slide"><a
+                                            href="../test_temp/forgot.html"
+                                            class="side-menu__item">Basic</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/forgot-cover.html"
+                                            class="side-menu__item">Cover-1</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/forgot-cover2.html"
+                                            class="side-menu__item">Cover-2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide has-sub"><a
+                                    href="javascript:void(0);"
+                                    class="side-menu__item">Reset
+                                Password<i
+                                        class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                                <ul class="slide-menu child2">
+                                    <li class="slide"><a
+                                            href="../test_temp/reset.html"
+                                            class="side-menu__item">Basic</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/reset-cover.html"
+                                            class="side-menu__item">Cover-1</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/reset-cover2.html"
+                                            class="side-menu__item">Cover-2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide has-sub"><a
+                                    href="javascript:void(0);"
+                                    class="side-menu__item">Lockscreen<i
+                                    class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                                <ul class="slide-menu child2">
+                                    <li class="slide"><a
+                                            href="../test_temp/lockscreen.html"
+                                            class="side-menu__item">Basic</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/lockscreen-cover.html"
+                                            class="side-menu__item">Cover-1</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/lockscreen-cover2.html"
+                                            class="side-menu__item">Cover-2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide has-sub"><a
+                                    href="javascript:void(0);"
+                                    class="side-menu__item">Two-Step
+                                Verfication<i
+                                        class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                                <ul class="slide-menu child2">
+                                    <li class="slide"><a
+                                            href="../test_temp/verfication.html"
+                                            class="side-menu__item">Basic</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/verfication-cover.html"
+                                            class="side-menu__item">Cover-1</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/verfication-cover2.html"
+                                            class="side-menu__item">Cover-2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/maintanace.html"
+                                    class="side-menu__item">Under
+                                Maintanace</a></li>
+                            <li class="slide"><a
+                                    href="../test_temp/construction.html"
+                                    class="side-menu__item">Under
+                                Construction</a>
+                            </li>
+                            <li class="slide"><a
+                                    href="../test_temp/comingsoon.html"
+                                    class="side-menu__item">Coming
+                                Soon</a></li>
+                            <li class="slide has-sub"><a
+                                    href="javascript:void(0);"
+                                    class="side-menu__item">Error
+                                Pages<i
+                                        class="ri ri-arrow-right-s-line side-menu__angle"></i></a>
+                                <ul class="slide-menu child2">
+                                    <li class="slide"><a
+                                            href="../test_temp/404.html"
+                                            class="side-menu__item">404Error</a>
+                                    </li>
+                                    <li class="slide"><a
+                                            href="../test_temp/500.html"
+                                            class="side-menu__item">500Error</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- End::slide -->
+
+                </ul>
+                <div class="slide-right" id="slide-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191"
+                         width="24"
+                         height="24" viewBox="0 0 24 24">
+                        <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+                    </svg>
+                </div>
+            </nav>
+            <!-- End::nav -->
+
+        </div>
+        <!-- End::main-sidebar -->
+
+    </aside>
+{% endblock %}

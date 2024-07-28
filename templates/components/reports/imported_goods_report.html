@@ -1,0 +1,36 @@
+{% load static %}
+{% block imported_goods_report %}
+    <div class="col-span-12 md:col-span-6 xxl:col-span-4">
+        <div class="box">
+            <div class="box-header">
+                <div class="flex">
+                    <h5 class="box-title my-auto">گزارش کالاهای
+                        وارداتی</h5>
+                    <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
+                        <button type="button"
+                                class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                            This Week <i
+                                class="ti ti-chevron-down"></i>
+                        </button>
+                        <div class="hs-dropdown-menu ti-dropdown-menu hidden">
+                            <a class="ti-dropdown-item"
+                               href="javascript:void(0)">This
+                                Week</a>
+                            <a class="ti-dropdown-item"
+                               href="javascript:void(0)">This
+                                Month</a>
+                            <a class="ti-dropdown-item"
+                               href="javascript:void(0)">This
+                                Year</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-body p-0">
+                <div class="px-3">
+                    <div id="leads"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
