@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+from conf.models.crm_entry import CRMEntry
+
+admin.site.register(CRMEntry)

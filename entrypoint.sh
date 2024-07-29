@@ -1,5 +1,4 @@
 #!/bin/sh
-
 echo "Starting static files..."
 python manage.py makemigrations --noinput
 echo "Migrations files collected."
