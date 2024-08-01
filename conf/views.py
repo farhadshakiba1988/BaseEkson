@@ -1,18 +1,20 @@
 from django.shortcuts import render
+from conf.models.bazargani_lead import LeadInfo
 from conf.models.crm_entry import CRMEntry
-from conf.models.person import Person
+from conf.models.lead import Lead
 
 
 # Create your views here.
 def home(request):
-    persons = [
-        {'name': 'John Doe', 'email': 'john@example.com', 'phone': '123456', 'company': 'ABC Corp', 'location': 'USA',
-         'date': '2023-04-02', 'status': 'Active', 'id': 1},
-        {'name': 'Jane Doe', 'email': 'jane@example.com', 'phone': '654321', 'company': 'XYZ Corp', 'location': 'UK',
-         'date': '2023-04-02', 'status': 'Inactive', 'id': 2}
-    ]
+    # دریافت داده‌های مدل Lead
+    leads = Lead.objects.all()
+
+    # دریافت داده‌های مدل CommercialLead
+    commercial_leads = LeadInfo.objects.all()
+
     context = {
-        'persons': persons,
+        'leads': leads,
+        'commercial_leads': commercial_leads,
     }
     return render(request, 'index9.html', context)
 
@@ -21,3 +23,13 @@ def crm_list_view(request):
     entries = CRMEntry.objects.all()
     return render(request, 'index9.html', {'entries': entries})
 
+
+def report_all(request):
+    leads = Lead.objects.all()
+    return render(request, 'components/reports/report_all.html',
+                  {'leads': leads})
+
+
+def test1_view(request):
+    leads = LeadInfo.objects.all()
+    return render(request, 'test1.html', {'leads': leads})

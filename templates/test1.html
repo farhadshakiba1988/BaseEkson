@@ -1,73 +1,133 @@
 {% load static %}
-{% block test1 %}
+{% block report %}
     <div class="grid grid-cols-12 gap-x-6">
         <div class="col-span-12">
             <div class="box">
+                <div class="box-header">
+                    <div class="flex">
+                        <h5 class="box-title my-auto">گزارش</h5>
+                        <div class="hs-dropdown ti-dropdown block ltr:ml-auto rtl:mr-auto my-auto">
+                            <button type="button"
+                                    class="hs-dropdown-toggle ti-dropdown-toggle rounded-sm p-1 px-3 !border border-gray-200 text-gray-400 hover:text-gray-500 hover:bg-gray-200 hover:border-gray-200 focus:ring-gray-200  dark:hover:bg-black/30 dark:border-white/10 dark:hover:border-white/20 dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
+                                نمایش همه <i class="ti ti-chevron-down"></i>
+                            </button>
+                            <div class="hs-dropdown-menu ti-dropdown-menu hidden">
+                                <a class="ti-dropdown-item"
+                                   href="javascript:void(0)">دانلود</a>
+                                <a class="ti-dropdown-item"
+                                   href="javascript:void(0)">وارد کردن</a>
+                                <a class="ti-dropdown-item"
+                                   href="javascript:void(0)">صادر کردن</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="box-body">
                     <div class="table-bordered rounded-sm ti-custom-table-head overflow-auto">
                         <table class="ti-custom-table ti-custom-table-head whitespace-nowrap">
                             <thead class="bg-gray-50 dark:bg-black/20">
                             <tr class="">
-                                <th scope="col" class="dark:text-white/80">CRM.no</th>
-                                <th scope="col" class="dark:text-white/80">کارشناس</th>
-                                <th scope="col" class="dark:text-white/80">شماره شرکت</th>
-                                <th scope="col" class="dark:text-white/80">شرکت</th>
-                                <th scope="col" class="dark:text-white/80">محل دریافت کالا</th>
-                                <th scope="col" class="dark:text-white/80">زمان تحویل</th>
-                                <th scope="col" class="dark:text-white/80">وضعیت</th>
-                                <th scope="col" class="dark:text-white/80">نمایش</th>
+                                <th scope="col" class="dark:text-white/80">
+                                    شماره
+                                </th>
+                                <th scope="col" class="dark:text-white/80">
+                                    سرنخ
+                                </th>
+                                <th scope="col" class="dark:text-white/80">شماره
+                                    تلفن
+                                </th>
+                                <th scope="col" class="dark:text-white/80">نام
+                                    شرکت
+                                </th>
+                                <th scope="col" class="dark:text-white/80">
+                                    مکان
+                                </th>
+                                <th scope="col" class="dark:text-white/80">
+                                    تاریخ
+                                </th>
+                                <th scope="col" class="dark:text-white/80">
+                                    وضعیت سرنخ
+                                </th>
+                                <th scope="col" class="dark:text-white/80">
+                                    وضعیت تایید
+                                </th>
+                                <th scope="col" class="dark:text-white/80">
+                                    مشاهده
+                                </th>
+                                <th scope="col" class="dark:text-white/80">
+                                    اقدام
+                                </th>
                             </tr>
                             </thead>
                             <tbody class="">
-                            {% for person in persons %}
+                            {% for lead in leads_info %}
+                                <!-- تغییر نام model ها به leads_info -->
                                 <tr class="">
                                     <td>{{ forloop.counter }}</td>
                                     <td>
                                         <div class="flex space-x-3 rtl:space-x-reverse text-start min-w-[200px]">
+                                            <img class="avatar avatar-sm rounded-sm"
+                                                 src="{% static 'assets/img/users/2.jpg' %}"
+                                                 alt="تصویر">
                                             <div class="block my-auto">
-                                                <p class="block text-sm font-semibold my-auto text-gray-800 dark:text-white">
-                                                    {{ person.name }}</p>
-                                                <span class="block text-xs text-gray-400 dark:text-white/80 !font-normal my-auto">{{ person.email }}</span>
+                                                <p class="block text-sm font-semibold my-auto text-gray-800 dark:text-white">{{ lead.name }}</p>
+                                                <span class="block text-xs text-gray-400 dark:text-white/80 !font-normal my-auto">{{ lead.email }}</span>
                                             </div>
                                         </div>
                                     </td>
-                                    <td>{{ person.phone }}</td>
-                                    <td>{{ person.company }}</td>
+                                    <td>{{ lead.phone }}</td>
+                                    <td>{{ lead.company }}</td>
                                     <td>
                                         <div class="inline-flex items-center">
                                             <i class="ri-map-pin-fill text-gray-500 dark:text-white/70 text-xs"></i>
-                                            <span class="ltr:ml-1 rtl:mr-1">{{ person.location }}</span>
+                                            <span class="ltr:ml-1 rtl:mr-1">{{ lead.location }}</span>
                                         </div>
                                     </td>
-                                    <td>{{ person.date }}</td>
+                                    <td>{{ lead.date }}</td>
                                     <td><span
-                                            class="truncate whitespace-nowrap inline-block py-1 px-3 rounded-full text-xs font-medium bg-success/10 text-success/80">{{ person.status }}</span>
+                                            class="truncate whitespace-nowrap inline-block py-1 px-3 rounded-full text-xs font-medium bg-success/10 text-success/80">{{ lead.get_status_display }}</span>
+                                    </td>
+                                    <td><span
+                                            class="truncate whitespace-nowrap inline-block py-1 px-3 rounded-full text-xs font-medium bg-warning/10 text-warning/80">{{ lead.get_approval_status_display }}</span>
                                     </td>
                                     <td class="font-medium space-x-2 rtl:space-x-reverse">
                                         <div class="hs-tooltip ti-main-tooltip">
                                             <a href="javascript:void(0);"
                                                class="view-btn m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary"
-                                               data-info="{{ person.id }},{{ person.name }},{{ person.email }},{{ person.phone }},{{ person.company }},{{ person.location }},{{ person.date }},{{ person.status }}">
+                                               data-info="{{ lead.id }},{{ lead.name }},{{ lead.email }},{{ lead.phone }},{{ lead.company }},{{ lead.location }},{{ lead.date }},{{ lead.get_status_display }},{{ lead.additional_info_1 }},{{ lead.additional_info_2 }}">
                                                 <i class="ti ti-eye"></i>
                                                 <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden"
-                                                      role="tooltip" data-popper-placement="top"
-                                                      style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">View</span>
+                                                      role="tooltip"
+                                                      data-popper-placement="top"
+                                                      style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
+                                                    مشاهده
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td class="font-medium space-x-2 rtl:space-x-reverse">
+                                        <div class="hs-tooltip ti-main-tooltip">
+                                            <a href="javascript:void(0);"
+                                               class="approve-btn m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-primary"
+                                               data-id="{{ lead.id }}">
+                                                <i class="ti ti-check"></i>
+                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700 hidden"
+                                                      role="tooltip"
+                                                      data-popper-placement="top"
+                                                      style="position: fixed; inset: auto auto 0px 0px; margin: 0px; transform: translate(1686px, -243px);">
+                                                    تایید
+                                                </span>
                                             </a>
                                         </div>
                                         <div class="hs-tooltip ti-main-tooltip">
                                             <a href="javascript:void(0);"
-                                               class="customer-edit m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-secondary">
-                                                <i class="ti ti-pencil"></i>
+                                               class="reject-btn m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger"
+                                               data-id="{{ lead.id }}">
+                                                <i class="ti ti-x"></i>
                                                 <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
-                                                      role="tooltip">Edit</span>
-                                            </a>
-                                        </div>
-                                        <div class="hs-tooltip ti-main-tooltip">
-                                            <a href="javascript:void(0);"
-                                               class="m-0 hs-tooltip-toggle relative w-8 h-8 ti-btn rounded-full p-0 transition-none focus:outline-none ti-btn-soft-danger">
-                                                <i class="ti ti-trash"></i>
-                                                <span class="hs-tooltip-content ti-main-tooltip-content py-1 px-2 bg-gray-900 text-xs font-medium text-white shadow-sm dark:bg-slate-700"
-                                                      role="tooltip">Delete</span>
+                                                      role="tooltip">
+                                                    رد
+                                                </span>
                                             </a>
                                         </div>
                                     </td>
@@ -80,25 +140,27 @@
                 <div class="box-footer">
                     <div class="sm:flex items-center">
                         <div class="">
-                            showing {{ persons|length }} Entries <i class="ri-arrow-right-line ml-2 font-semibold"></i>
+                            نمایش {{ leads_info|length }} ورودی <i
+                                class="ri-arrow-right-line ml-2 font-semibold"></i>
                         </div>
                         <div class="ltr:ml-auto rtl:mr-auto">
                             <nav class="flex justify-center items-center space-x-2 rtl:space-x-reverse">
                                 <a class="text-gray-500 hover:text-primary e py-1 px-2 leading-none inline-flex items-center gap-2 rounded-sm"
                                    href="javascript:void(0);">
-                                    <span aria-hidden="true">Prev</span>
-                                    <span class="sr-only">Previous</span>
+                                    <span aria-hidden="true">قبلی</span>
+                                    <span class="sr-only">قبلی</span>
                                 </a>
                                 <a class="bg-primary text-white py-1 px-2 leading-none inline-flex items-center text-sm font-medium rounded-sm"
-                                   href="javascript:void(0);" aria-current="page">1</a>
+                                   href="javascript:void(0);"
+                                   aria-current="page">1</a>
                                 <a class="text-gray-500 hover:text-primary e py-1 px-2 leading-none inline-flex items-center text-sm font-medium rounded-sm"
                                    href="javascript:void(0);">2</a>
                                 <a class="text-gray-500 hover:text-primary e py-1 px-2 leading-none inline-flex items-center text-sm font-medium rounded-sm"
                                    href="javascript:void(0);">3</a>
                                 <a class="text-gray-500 hover:text-primary e py-1 px-2 leading-none inline-flex items-center gap-2 rounded-sm"
                                    href="javascript:void(0);">
-                                    <span class="sr-only">Next</span>
-                                    <span aria-hidden="true">Next</span>
+                                    <span class="sr-only">بعدی</span>
+                                    <span aria-hidden="true">بعدی</span>
                                 </a>
                             </nav>
                         </div>
@@ -110,15 +172,17 @@
 
     <!-- Modal Structure -->
     <div id="modal"
-         style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; align-items:center; justify-content:center; background-color:rgba(0,0,0,0.5);">
-        <div style="background:#2d3748; padding:20px; border-radius:5px; width:50%; color:white;">
-            <div style="display:flex; justify-content:space-between; align-items:center;">
-                <h2>Modal Title</h2>
-                <button id="closeModal" style="background:none; border:none; font-size:20px; color:white;">&times;
+         style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; align-items:center; justify-content:center; background-color:rgba(0,0,0,0.5); z-index: 9999;">
+        <div style="background:#2d3748; padding:30px; border-radius:10px; width:60%; color:white; max-width:800px; text-align:right;">
+            <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #4a5568; padding-bottom:10px;">
+                <h2 style="font-size:24px;">جزئیات</h2>
+                <button id="closeModal"
+                        style="background:none; border:none; font-size:24px; color:white; cursor:pointer;">
+                    &times;
                 </button>
             </div>
             <div id="modal-info" class="modal-content"
-                 style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                 style="margin-top:20px; display:grid; grid-template-columns: 1fr 1fr; gap:20px; font-size:18px;">
                 <!-- اطلاعات به صورت پویا اینجا نمایش داده می‌شود -->
             </div>
         </div>
@@ -135,16 +199,19 @@
                 button.addEventListener('click', function () {
                     var data = this.getAttribute('data-info').split(',');
                     var info = `
-          <div><strong>S.no:</strong> ${data[0]}</div>
-          <div><strong>Name:</strong> ${data[1]}</div>
-          <div><strong>Email:</strong> ${data[2]}</div>
-          <div><strong>Phone:</strong> ${data[3]}</div>
-          <div><strong>Company:</strong> ${data[4]}</div>
-          <div><strong>Location:</strong> ${data[5]}</div>
-          <div><strong>Date:</strong> ${data[6]}</div>
-          <div><strong>Status:</strong> ${data[7]}</div>
-        `;
-                    modalInfo.innerHTML = info;
+                        <div><strong>شماره:</strong> ${data[0]}</div>
+                        <div><strong>سرنخ:</strong> ${data[1]}</div>
+                        <div><strong>شماره تلفن:</strong> ${data[2]}</div>
+                        <div><strong>نام شرکت:</strong> ${data[3]}</div>
+                        <div><strong>مکان:</strong> ${data[4]}</div>
+                        <div><strong>تاریخ:</strong> ${data[5]}</div>
+                        <div><strong>وضعیت:</strong> ${data[6]}</div>
+                        <div><strong>اطلاعات اضافی 1:</strong> ${data[7]}</div>
+                        <div><strong>اطلاعات اضافی 2:</strong> ${data[8]}</div>
+                    `;
+                    modalInfo.innerHTML = `<table style="width:100%; border-collapse:collapse; font-size:16px;">
+                        ${info.split('</div>').map(i => i ? `<tr style="border-bottom:1px solid #4a5568;"><td style="padding:10px;">${i.replace('<div>', '')}</td></tr>` : '').join('')}
+                    </table>`;
                     modal.style.display = "flex";
                 });
             });
@@ -158,6 +225,42 @@
                     modal.style.display = "none";
                 }
             });
+
+            document.querySelectorAll('.approve-btn').forEach(function (button) {
+                button.addEventListener('click', function () {
+                    var actionCell = this.closest('td');
+                    var rejectButton = actionCell.querySelector('.reject-btn');
+                    var approveButton = this;
+
+                    rejectButton.style.display = 'none';
+                    approveButton.style.display = 'none';
+
+                    var status = document.createElement('span');
+                    status.className = 'status-label';
+                    status.style.color = 'green';
+                    status.style.fontWeight = 'bold';
+                    status.textContent = 'تایید شده';
+                    actionCell.appendChild(status);
+                });
+            });
+
+            document.querySelectorAll('.reject-btn').forEach(function (button) {
+                button.addEventListener('click', function () {
+                    var actionCell = this.closest('td');
+                    var approveButton = actionCell.querySelector('.approve-btn');
+                    var rejectButton = this;
+
+                    approveButton.style.display = 'none';
+                    rejectButton.style.display = 'none';
+
+                    var status = document.createElement('span');
+                    status.className = 'status-label';
+                    status.style.color = 'red';
+                    status.style.fontWeight = 'bold';
+                    status.textContent = 'رد شده';
+                    actionCell.appendChild(status);
+                });
+            });
         });
     </script>
-{% endblock %}
+{% endblock report %}
