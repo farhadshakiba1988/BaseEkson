@@ -1,27 +1,21 @@
 from django.shortcuts import render
 from conf.models.bazargani_lead import LeadInfo
-from conf.models.crm_entry import CRMEntry
 from conf.models.lead import Lead
+from conf.models.task_report import TaskReport
 
 
 # Create your views here.
 def home(request):
-    # دریافت داده‌های مدل Lead
     leads = Lead.objects.all()
-
-    # دریافت داده‌های مدل CommercialLead
     commercial_leads = LeadInfo.objects.all()
+    task = TaskReport.objects.all()
 
-    context = {
+    ctx = {
         'leads': leads,
         'commercial_leads': commercial_leads,
+        'task': task,
     }
-    return render(request, 'index9.html', context)
-
-
-def crm_list_view(request):
-    entries = CRMEntry.objects.all()
-    return render(request, 'index9.html', {'entries': entries})
+    return render(request, 'index9.html', ctx)
 
 
 def report_all(request):
@@ -30,6 +24,6 @@ def report_all(request):
                   {'leads': leads})
 
 
-def test1_view(request):
-    leads = LeadInfo.objects.all()
-    return render(request, 'test1.html', {'leads': leads})
+def bazarghani_report(request):
+    commercial_leads = LeadInfo.objects.all()
+    return render(request, 'test1.html', {'commercial_leads': commercial_leads})

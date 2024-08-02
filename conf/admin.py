@@ -5,6 +5,7 @@ from conf.models.lead import Lead
 from conf.models.department import Department
 from conf.models.crm_entry import CRMEntry
 from conf.models.person import Person
+from conf.models.task_report import TaskReport
 
 
 class PersonAdmin(admin.ModelAdmin):
@@ -18,3 +19,4 @@ admin.site.register(Person)
 admin.site.register(Department)
 admin.site.register(Lead)
 admin.site.register(LeadInfo)
+admin.site.register(TaskReport)

@@ -4,5 +4,5 @@ from conf import views
 urlpatterns = [
     path('', views.home, name='home'),
     path('report_all/', views.report_all, name='report_all'),
-    path('test1/', views.test1_view, name='test1_view'),
+    path('bazarghani_report/', views.bazarghani_report, name='bazarghani_report'),
 ]
