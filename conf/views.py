@@ -26,4 +26,9 @@ def report_all(request):
 
 def bazarghani_report(request):
     commercial_leads = LeadInfo.objects.all()
-    return render(request, 'test1.html', {'commercial_leads': commercial_leads})
+    return render(request, 'bazargani.html',
+                  {'commercial_leads': commercial_leads})
+
+
+def farhad(request):
+    return render(request, 'components/task/tasks.html')
