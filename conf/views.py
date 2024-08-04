@@ -30,5 +30,3 @@ def bazarghani_report(request):
                   {'commercial_leads': commercial_leads})
 
 
-def farhad(request):
-    return render(request, 'components/task/tasks.html')
