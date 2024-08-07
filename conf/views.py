@@ -31,4 +31,4 @@ def bazarghani_report(request):
 
 
 def farhad(request):
-    return render(request, 'components/task/tasks.html')
+    return render(request, 'index6.html')
