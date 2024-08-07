@@ -10,6 +10,7 @@ from conf.models.notification import Notification
 from conf.models.person import Person
 from conf.models.sales import Sale
 from conf.models.salespersonreport import SalesPersonReport
+from conf.models.tag import Tag
 from conf.models.task import Task
 from conf.models.task_report import TaskReport
 
@@ -32,3 +33,4 @@ admin.site.register(Sale)
 admin.site.register(SalesPersonReport)
 admin.site.register(Task)
 admin.site.register(TaskReport)
+admin.site.register(Tag)
