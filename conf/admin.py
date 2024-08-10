@@ -1,18 +1,18 @@
 from django.contrib import admin
 
-from conf.models.approval import Approval
-from conf.models.bazargani_lead import LeadInfo
-from conf.models.crm_num import CRMNum
-from conf.models.lead import Lead
-from conf.models.department import Department
-from conf.models.crm_entry import CRMEntry
-from conf.models.notification import Notification
-from conf.models.person import Person
-from conf.models.sales import Sale
-from conf.models.salespersonreport import SalesPersonReport
-from conf.models.tag import Tag
-from conf.models.task import Task
-from conf.models.task_report import TaskReport
+from web.models import Approval
+from web.models.bazargani_lead import LeadInfo
+from web.models import CRMNum
+from web.models import Lead
+from web.models.department import Department
+from web.models import CRMEntry
+from web.models import Notification
+from web.models import Person
+from web.models import Sale
+from web.models import SalesPersonReport
+from web.models import Tag
+from web.models import Task
+from web.models import TaskReport
 
 
 class PersonAdmin(admin.ModelAdmin):

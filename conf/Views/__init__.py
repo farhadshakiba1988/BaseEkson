@@ -1,4 +1,3 @@
 from .index_views import Farhad
-from conf.models import Lead
-from conf.models import LeadInfo
-from conf.models import TaskReport
+from .home_views import Home
+from .invoice_views import Invoice

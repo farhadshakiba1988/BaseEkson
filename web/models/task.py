@@ -1,8 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-from conf.models.person import Person
-from conf.models.tag import Tag
+from web.models.person import Person
+from web.models.tag import Tag
 
 
 class Task(models.Model):

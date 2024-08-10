@@ -17,12 +17,12 @@
 
                 <div class="responsive-logo">
                     <a class="responsive-logo-dark"
-                       href="../test_temp/index.html"
+                       href="#"
                        aria-label="Brand"><img
                             src="{% static 'assets/img/brand-logos/desktop-logo.png' %}"
                             alt="logo" class="mx-auto"></a>
                     <a class="responsive-logo-light"
-                       href="../test_temp/index.html"
+                       href="{% url 'conf:farhad' %}"
                        aria-label="Brand"><img
                             src="{% static 'assets/img/brand-logos/desktop-dark.png' %}"
                             alt="logo" class="mx-auto"></a>
@@ -146,20 +146,11 @@
                                     <i class="ri-sun-line header-icon"></i>
                                 </a>
                             </div>
-                            <div class="header-fullscreen hidden lg:block">
-                                <a aria-label="anchor"
-                                   href="javascript:void(0);"
-                                   onclick="openFullscreen();"
-                                   class="inline-flex flex-shrink-0 justify-center items-center gap-2 h-[2.375rem] w-[2.375rem] rounded-full font-medium bg-gray-100 hover:bg-gray-200 text-gray-500 align-middle focus:outline-none focus:ring-0 focus:ring-gray-400 focus:ring-offset-0 focus:ring-offset-white transition-all text-xs dark:bg-bgdark dark:hover:bg-black/20 dark:text-white/70 dark:hover:text-white dark:focus:ring-white/10 dark:focus:ring-offset-white/10">
-                                    <i class="ri-fullscreen-line header-icon full-screen-open"></i>
-                                    <i class="ri-fullscreen-line header-icon fullscreen-exit-line full-screen-close hidden"></i>
-                                </a>
-                            </div>
                             <div class="header-cart hs-dropdown ti-dropdown hidden lg:block"
                                  data-hs-dropdown-placement="bottom-right">
                                 <button id="dropdown-cart" type="button"
                                         class="hs-dropdown-toggle ti-dropdown-toggle p-0 border-0 flex-shrink-0 h-[2.375rem] w-[2.375rem] rounded-full shadow-none focus:ring-gray-400 text-xs dark:focus:ring-white/10">
-                                    <i class="ri-shopping-basket-line header-icon"></i>
+                                    <i class="ri-message-line header-icon"></i>
                                     <span class="flex absolute h-5 w-5 top-0 ltr:right-0 rtl:left-0 -mt-1 ltr:-mr-1 rtl:-ml-1">
                       <span
                               class="relative inline-flex rounded-full h-5 w-5 bg-danger text-white justify-center items-center"
@@ -170,7 +161,7 @@
                                      aria-labelledby="dropdown-cart">
                                     <div class="ti-dropdown-header !bg-primary border-b dark:border-white/10 flex justify-between items-center">
                                         <p class="ti-dropdown-header-title !text-white font-semibold">
-                                            Shopping Cart</p>
+                                            Message</p>
                                         <a href="javascript:void(0)"
                                            class="badge bg-black/20 text-white rounded-sm"
                                            id="cart-data">4 Items</a>
@@ -179,7 +170,7 @@
                                         <div class="py-2 first:pt-0 last:pb-0"
                                              id="allCartsContainer">
                                             <div class="ti-dropdown-item relative header-box">
-                                                <a href="../test_temp/cart.html"
+                                                <a href="#"
                                                    class="flex items-center space-x-3 rtl:space-x-reverse w-full">
                                                     <img loading="lazy"
                                                          src="{% static 'assets/img/ecommerce/products/1.png' %}"
@@ -204,7 +195,7 @@
                                                 </a>
                                             </div>
                                             <div class="ti-dropdown-item relative header-box">
-                                                <a href="../test_temp/cart.html"
+                                                <a href="#"
                                                    class="flex items-center space-x-3 rtl:space-x-reverse w-full">
                                                     <img loading="lazy"
                                                          src="{% static 'assets/img/ecommerce/products/2.png' %}"
@@ -228,7 +219,7 @@
                                                 </a>
                                             </div>
                                             <div class="ti-dropdown-item relative header-box">
-                                                <a href="../test_temp/cart.html"
+                                                <a href="#"
                                                    class="flex items-center space-x-3 rtl:space-x-reverse w-full">
                                                     <img loading="lazy"
                                                          src="{% static 'assets/img/ecommerce/products/9.png' %}"
@@ -253,7 +244,7 @@
                                                 </a>
                                             </div>
                                             <div class="ti-dropdown-item relative header-box">
-                                                <a href="../test_temp/cart.html"
+                                                <a href="#"
                                                    class="flex items-center space-x-3 rtl:space-x-reverse w-full">
                                                     <img loading="lazy"
                                                          src="{% static 'assets/img/ecommerce/products/10.png' %}"
@@ -290,7 +281,7 @@
                                         </div>
                                         <div class="py-2 first:pt-0 px-5">
                                             <a class="w-full ti-btn ti-btn-primary p-2"
-                                               href="../test_temp/checkout.html">
+                                               href="#">
                                                 Proceed Checkout
                                             </a>
                                         </div>
@@ -323,7 +314,7 @@
                                         <div class="py-2 first:pt-0 last:pb-0"
                                              id="allNotifyContainer">
                                             <div class="ti-dropdown-item relative header-box">
-                                                <a href="../test_temp/mail-inbox.html"
+                                                <a href="#"
                                                    class="flex space-x-3 rtl:space-x-reverse">
                                                     <div class="ltr:mr-2 rtl:ml-2 avatar rounded-full ring-0">
                                                         <img src="{% static 'assets/img/users/17.jpg' %}"
@@ -349,7 +340,7 @@
                                                 </a>
                                             </div>
                                             <div class="ti-dropdown-item relative header-box">
-                                                <a href="../test_temp/mail-inbox.html"
+                                                <a href="#"
                                                    class="flex items-center space-x-3 rtl:space-x-reverse">
                                                     <div class="ltr:mr-2 rtl:ml-2 avatar rounded-full ring-0">
                                                         <img src="{% static 'assets/img/users/2.jpg' %}"
@@ -375,7 +366,7 @@
                                                 </a>
                                             </div>
                                             <div class="ti-dropdown-item relative header-box">
-                                                <a href="../test_temp/mail-inbox.html"
+                                                <a href="#"
                                                    class="flex items-center space-x-3 rtl:space-x-reverse">
                                                     <div class="ltr:mr-2 rtl:ml-2 avatar rounded-full ring-0">
                                                         <img src="{% static 'assets/img/users/21.jpg' %}"
@@ -400,7 +391,7 @@
                                                 </a>
                                             </div>
                                             <div class="ti-dropdown-item relative header-box">
-                                                <a href="../test_temp/mail-inbox.html"
+                                                <a href="#"
                                                    class="flex items-center space-x-3 rtl:space-x-reverse">
                                                     <div class="ltr:mr-2 rtl:ml-2 avatar rounded-full ring-0">
                                                         <img src="{% static 'assets/img/users/11.jpg' %}"
@@ -429,7 +420,7 @@
                                         </div>
                                         <div class="py-2 first:pt-0 px-5">
                                             <a class="w-full ti-btn ti-btn-primary p-2"
-                                               href="../test_temp/mail-inbox.html">
+                                               href="#">
                                                 View All
                                             </a>
                                         </div>
@@ -452,7 +443,7 @@
                                     </div>
                                     <div class="ti-dropdown-divider divide-y divide-gray-200 dark:divide-white/10">
                                         <div class="grid grid-cols-3 gap-0 p-4 pt-2">
-                                            <a href="../test_temp/mail-inbox.html"
+                                            <a href="#"
                                                class="block pt-0 p-2 text-center rounded-sm hover:bg-gray-50 dark:hover:bg-black/20">
                                                 <i class="ri ri-mail-line leading-none text-2xl avatar ring-0 bg-primary/20 text-primary rounded-sm p-3 my-3 align-middle flex justify-center mx-auto"></i>
                                                 <div class="text-xs font-semibold text-gray-800 dark:text-white">
@@ -460,35 +451,35 @@
                                                     Inbox
                                                 </div>
                                             </a>
-                                            <a href="../test_temp/chat.html"
+                                            <a href="#"
                                                class="block pt-0 p-2 text-center rounded-sm hover:bg-gray-50 dark:hover:bg-black/20">
                                                 <i class="ri ri-chat-2-line leading-none text-2xl avatar ring-0 bg-secondary/20 text-secondary rounded-sm p-3 my-3 align-middle flex justify-center mx-auto"></i>
                                                 <div class="text-xs font-semibold text-gray-800 dark:text-white">
                                                     Chat
                                                 </div>
                                             </a>
-                                            <a href="../test_temp/tasks.html"
+                                            <a href="#"
                                                class="block pt-0 p-2 text-center rounded-sm hover:bg-gray-50 dark:hover:bg-black/20">
                                                 <i class="ri ri-task-line leading-none text-2xl avatar ring-0 bg-warning/20 text-warning rounded-sm p-3 my-3 align-middle flex justify-center mx-auto"></i>
                                                 <div class="text-xs font-semibold text-gray-800 dark:text-white">
                                                     Task
                                                 </div>
                                             </a>
-                                            <a href="../test_temp/calendar.html"
+                                            <a href="#"
                                                class="block pt-0 p-2 text-center rounded-sm hover:bg-gray-50 dark:hover:bg-black/20">
                                                 <i class="ri ri-calendar-event-line leading-none text-2xl avatar ring-0 bg-danger/20 text-danger rounded-sm p-3 my-3 align-middle flex justify-center mx-auto"></i>
                                                 <div class="text-xs font-semibold text-gray-800 dark:text-white">
                                                     Calendar
                                                 </div>
                                             </a>
-                                            <a href="../test_temp/filemanager.html"
+                                            <a href="#"
                                                class="block pt-0 p-2 text-center rounded-sm hover:bg-gray-50 dark:hover:bg-black/20">
                                                 <i class="ri ri-file-copy-2-line leading-none text-2xl avatar ring-0 bg-info/20 text-info rounded-sm p-3 my-3 align-middle flex justify-center mx-auto"></i>
                                                 <div class="text-xs font-semibold text-gray-800 dark:text-white">
                                                     FileManager
                                                 </div>
                                             </a>
-                                            <a href="../test_temp/contacts.html"
+                                            <a href="#"
                                                class="block pt-0 p-2 text-center rounded-sm hover:bg-gray-50 dark:hover:bg-black/20">
                                                 <i class="ri ri-group-line leading-none text-2xl avatar ring-0 bg-success/20 text-success rounded-sm p-3 my-3 align-middle flex justify-center mx-auto"></i>
                                                 <div class="text-xs font-semibold text-gray-800 dark:text-white">
@@ -530,32 +521,32 @@
                                         </div>
                                     </div>
                                     <div class="mt-2 ti-dropdown-divider">
-                                        <a href="../test_temp/profile.html"
+                                        <a href="#"
                                            class="ti-dropdown-item">
                                             <i class="ti ti-user-circle text-lg"></i>
                                             Profile
                                         </a>
-                                        <a href="../test_temp/mail-inbox.html"
+                                        <a href="#"
                                            class="ti-dropdown-item">
                                             <i class="ti ti-inbox text-lg"></i>
                                             Inbox
                                         </a>
-                                        <a href="../test_temp/tasks.html"
+                                        <a href="#"
                                            class="ti-dropdown-item">
                                             <i class="ti ti-clipboard-check text-lg"></i>
                                             Task Manager
                                         </a>
-                                        <a href="../test_temp/profile-settings.html"
+                                        <a href="#"
                                            class="ti-dropdown-item">
                                             <i class="ti ti-adjustments-horizontal text-lg"></i>
                                             Settings
                                         </a>
-                                        <a href="../test_temp/index3.html"
+                                        <a href="#"
                                            class="ti-dropdown-item">
                                             <i class="ti ti-wallet text-lg"></i>
                                             Bal: $7,12,950
                                         </a>
-                                        <a href="../test_temp/signin.html"
+                                        <a href="#"
                                            class="ti-dropdown-item">
                                             <i class="ti ti-logout  text-lg"></i>
                                             Log Out

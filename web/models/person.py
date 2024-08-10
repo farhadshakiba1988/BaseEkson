@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-from conf.models.department import Department
+from web.models.department import Department
 
 
 class Person(models.Model):

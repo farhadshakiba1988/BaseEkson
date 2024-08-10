@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views import View
-from conf.models import Lead
+from web.models import Lead
 
 class Lead(View):
     def get(self, request, *args, **kwargs):

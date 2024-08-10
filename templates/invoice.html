@@ -1,7 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en" dir="ltr" data-nav-layout="vertical" class="light"
-      data-header-styles="light" data-menu-styles="dark">
+<html lang="fa" dir="ltr" data-nav-layout="horizontal" class="dark"
+      data-header-styles="dark" data-menu-styles="dark">
 
 {% block extend_head %}
     {% include 'components/extend_head.html' %}
@@ -713,7 +713,7 @@
                                         <td>
                                             <div class="flex space-x-3 rtl:space-x-reverse text-start min-w-[220px] truncate">
                                                 <img class="avatar avatar-sm rounded-sm"
-                                                     src="../assets/img/users/2.jpg"
+                                                     src="{% static 'assets/img/users/2.jpg' %}"
                                                      alt="Image Description">
                                                 <div class="block">
                                                     <p class="block text-sm font-semibold text-gray-800 dark:text-white my-auto">
@@ -781,7 +781,7 @@
                                         <td>
                                             <div class="flex space-x-3 rtl:space-x-reverse text-start min-w-[220px] truncate">
                                                 <img class="avatar avatar-sm rounded-sm"
-                                                     src="../assets/img/users/3.jpg"
+                                                     src="{% static 'assets/img/users/3.jpg' %}"
                                                      alt="Image Description">
                                                 <div class="block">
                                                     <p class="block text-sm font-semibold text-gray-800 dark:text-white my-auto">
@@ -849,7 +849,7 @@
                                         <td>
                                             <div class="flex space-x-3 rtl:space-x-reverse text-start min-w-[220px] truncate">
                                                 <img class="avatar avatar-sm rounded-sm"
-                                                     src="../assets/img/users/4.jpg"
+                                                     src="{% static 'assets/img/users/4.jpg' %}"
                                                      alt="Image Description">
                                                 <div class="block">
                                                     <p class="block text-sm font-semibold text-gray-800 dark:text-white my-auto">
@@ -917,7 +917,7 @@
                                         <td>
                                             <div class="flex space-x-3 rtl:space-x-reverse text-start min-w-[220px] truncate">
                                                 <img class="avatar avatar-sm rounded-sm"
-                                                     src="../assets/img/users/5.jpg"
+                                                     src="{% static 'assets/img/users/5.jpg' %}"
                                                      alt="Image Description">
                                                 <div class="block">
                                                     <p class="block text-sm font-semibold text-gray-800 dark:text-white my-auto">
@@ -985,7 +985,7 @@
                                         <td>
                                             <div class="flex space-x-3 rtl:space-x-reverse text-start min-w-[220px] truncate">
                                                 <img class="avatar avatar-sm rounded-sm"
-                                                     src="../assets/img/users/9.jpg"
+                                                     src="{% static 'assets/img/users/9.jpg' %}"
                                                      alt="Image Description">
                                                 <div class="block">
                                                     <p class="block text-sm font-semibold text-gray-800 dark:text-white my-auto">
@@ -1053,7 +1053,7 @@
                                         <td>
                                             <div class="flex space-x-3 rtl:space-x-reverse text-start min-w-[220px] truncate">
                                                 <img class="avatar avatar-sm rounded-sm"
-                                                     src="../assets/img/users/10.jpg"
+                                                     src="{% static 'assets/img/users/10.jpg' %}"
                                                      alt="Image Description">
                                                 <div class="block">
                                                     <p class="block text-sm font-semibold text-gray-800 dark:text-white my-auto">
@@ -1121,7 +1121,7 @@
                                         <td>
                                             <div class="flex space-x-3 rtl:space-x-reverse text-start min-w-[220px] truncate">
                                                 <img class="avatar avatar-sm rounded-sm"
-                                                     src="../assets/img/users/11.jpg"
+                                                     src="{% static 'assets/img/users/11.jpg' %}"
                                                      alt="Image Description">
                                                 <div class="block">
                                                     <p class="block text-sm font-semibold text-gray-800 dark:text-white my-auto">
@@ -1189,7 +1189,7 @@
                                         <td>
                                             <div class="flex space-x-3 rtl:space-x-reverse text-start min-w-[220px] truncate">
                                                 <img class="avatar avatar-sm rounded-sm"
-                                                     src="../assets/img/users/12.jpg"
+                                                     src="{% static 'assets/img/users/12.jpg' %}"
                                                      alt="Image Description">
                                                 <div class="block">
                                                     <p class="block text-sm font-semibold text-gray-800 dark:text-white my-auto">
@@ -1257,7 +1257,7 @@
                                         <td>
                                             <div class="flex space-x-3 rtl:space-x-reverse text-start min-w-[220px] truncate">
                                                 <img class="avatar avatar-sm rounded-sm"
-                                                     src="../assets/img/users/6.jpg"
+                                                     src="{% static 'assets/img/users/6.jpg' %}"
                                                      alt="Image Description">
                                                 <div class="block">
                                                     <p class="block text-sm font-semibold text-gray-800 dark:text-white my-auto">
@@ -1325,7 +1325,7 @@
                                         <td>
                                             <div class="flex space-x-3 rtl:space-x-reverse text-start min-w-[220px] truncate">
                                                 <img class="avatar avatar-sm rounded-sm"
-                                                     src="../assets/img/users/7.jpg"
+                                                     src="{% static 'assets/img/users/7.jpg' %}"
                                                      alt="Image Description">
                                                 <div class="block">
                                                     <p class="block text-sm font-semibold text-gray-800 dark:text-white my-auto">
@@ -1597,9 +1597,9 @@
                     <div class="flex flex-col md:flex-row space-y-6 justify-between mb-5">
                         <div class="space-y-2">
                             <div class="mb-2">
-                                <img src="../assets/img/brand-logos/desktop-logo.png"
+                                <img src="{% static 'assets/img/brand-logos/desktop-logo.png' %}"
                                      alt="logo" class="flex dark:hidden">
-                                <img src="../assets/img/brand-logos/desktop-dark.png"
+                                <img src="{% static 'assets/img/brand-logos/desktop-dark.png' %}"
                                      alt="logo" class="hidden dark:flex">
                             </div>
                             <input type="text"

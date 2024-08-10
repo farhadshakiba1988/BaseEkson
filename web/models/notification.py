@@ -1,6 +1,6 @@
 from django.db import models
 
-from conf.models.person import Person
+from web.models.person import Person
 
 
 class Notification(models.Model):

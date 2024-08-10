@@ -1,7 +1,7 @@
 from django.db import models
 from django.db.models import Sum
 
-from conf.models.person import Person
+from web.models.person import Person
 
 
 # مدل SalesPersonReport برای مدیریت گزارش فروش فردی

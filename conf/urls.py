@@ -1,9 +1,9 @@
 from django.urls import path
 
-from .Views.bazarghani_report_views import LeadInfo
+from web.views.bazarghani_report_views import LeadInfo
 from .Views.index_views import Farhad
 from .Views.invoice_views import Invoice
-from .Views.report_all_views import Lead
+from web.views.report_all_views import Lead
 
 app_name = 'conf'
 urlpatterns = [

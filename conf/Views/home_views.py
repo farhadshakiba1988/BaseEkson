@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views import View
 
-from conf.models import Lead, LeadInfo, TaskReport
+from web.models import Lead, LeadInfo, TaskReport
 
 
 class Home(View):
