@@ -1,0 +1,13 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Foreign Purchase Experts</h1>
+  <ul>
+    {% for expert in foreign_purchase_experts %}
+      <li>
+        <a href="{% url 'foreign_purchase_expert_detail' expert.pk %}">{{ expert }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  <a href="{% url 'foreign_purchase_expert_create' %}">Add New Expert</a>
+{% endblock %}

@@ -6,5 +6,5 @@ from web.models import LeadInfo
 class LeadInfo(View):
     def get(self, request, *args, **kwargs):
         commercial_leads = LeadInfo.objects.all()
-        return render(request, 'bazargani.html',
+        return render(request, 'NPPD/bazargani.html',
                       {'commercial_leads': commercial_leads})

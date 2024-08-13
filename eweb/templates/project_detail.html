@@ -1,0 +1,11 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>{{ project.project_name }}</h1>
+  <p>Description: {{ project.description }}</p>
+  <p>Start Date: {{ project.start_date }}</p>
+  <p>End Date: {{ project.end_date }}</p>
+  <p>Expert: {{ project.expert }}</p>
+  <a href="{% url 'project_update' project.pk %}">Edit</a> |
+  <a href="{% url 'project_delete' project.pk %}">Delete</a>
+{% endblock %}

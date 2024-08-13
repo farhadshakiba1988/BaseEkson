@@ -4,4 +4,4 @@ from django.views import View
 
 class Farhad(View):
     def get(self, request, *args, **kwargs):
-        return render(request, 'index6.html')
+        return render(request, 'Ekson/../../eweb/templates/index10.html')

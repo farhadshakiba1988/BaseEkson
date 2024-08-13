@@ -1,0 +1,11 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>{{ contract_company.company_name }}</h1>
+  <p>Contact Person: {{ contract_company.contact_person }}</p>
+  <p>Phone Number: {{ contract_company.phone_number }}</p>
+  <p>Email: {{ contract_company.email }}</p>
+  <p>Address: {{ contract_company.address }}</p>
+  <a href="{% url 'contract_company_update' contract_company.pk %}">Edit</a> |
+  <a href="{% url 'contract_company_delete' contract_company.pk %}">Delete</a>
+{% endblock %}

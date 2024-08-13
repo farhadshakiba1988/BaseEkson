@@ -1,0 +1,11 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Delete Foreign Purchase Expert</h1>
+  <p>Are you sure you want to delete "{{ foreign_purchase_expert }}"?</p>
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit">Confirm</button>
+  </form>
+  <a href="{% url 'foreign_purchase_expert_list' %}">Cancel</a>
+{% endblock %}

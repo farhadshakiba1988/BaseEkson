@@ -1,0 +1,11 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Delete Contract Company</h1>
+  <p>Are you sure you want to delete "{{ contract_company.company_name }}"?</p>
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit">Confirm</button>
+  </form>
+  <a href="{% url 'contract_company_list' %}">Cancel</a>
+{% endblock %}

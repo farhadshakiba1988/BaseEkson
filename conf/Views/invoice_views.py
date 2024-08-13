@@ -4,4 +4,4 @@ from django.views import View
 
 class Invoice(View):
     def get(self,request,*args,**kwargs):
-        return render(request, 'invoice.html')
+        return render(request, 'NPPD/invoice.html')

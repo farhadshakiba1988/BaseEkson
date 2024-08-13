@@ -1,0 +1,11 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Delete Daily Activity</h1>
+  <p>Are you sure you want to delete this activity on "{{ daily_activity.date }}"?</p>
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit">Confirm</button>
+  </form>
+  <a href="{% url 'daily_activity_list' %}">Cancel</a>
+{% endblock %}

@@ -15,4 +15,4 @@ class Home(View):
             'commercial_leads': commercial_leads,
             'task': task,
         }
-        return render(request, 'index9.html', ctx)
+        return render(request, 'NPPD/index9.html', ctx)

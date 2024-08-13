@@ -1,0 +1,13 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Contract Companies</h1>
+  <ul>
+    {% for company in contract_companies %}
+      <li>
+        <a href="{% url 'contract_company_detail' company.pk %}">{{ company.company_name }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  <a href="{% url 'contract_company_create' %}">Add New Company</a>
+{% endblock %}

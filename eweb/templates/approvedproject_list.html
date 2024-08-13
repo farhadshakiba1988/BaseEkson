@@ -1,0 +1,13 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Approved Projects</h1>
+  <ul>
+    {% for project in approved_projects %}
+      <li>
+        <a href="{% url 'approved_project_detail' project.pk %}">{{ project }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  <a href="{% url 'approved_project_create' %}">Create New Approved Project</a>
+{% endblock %}

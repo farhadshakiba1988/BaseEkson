@@ -1,0 +1,10 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>{{ approved_project }}</h1>
+  <p>Approval Date: {{ approved_project.approval_date }}</p>
+  <p>Approved By: {{ approved_project.approved_by }}</p>
+  <p>Project: {{ approved_project.project.project_name }}</p>
+  <a href="{% url 'approved_project_update' approved_project.pk %}">Edit</a> |
+  <a href="{% url 'approved_project_delete' approved_project.pk %}">Delete</a>
+{% endblock %}

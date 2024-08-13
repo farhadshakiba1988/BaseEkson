@@ -24,4 +24,5 @@ from base import settings
 urlpatterns = [
                    path("admin/", admin.site.urls),
                    path('', include('conf.urls')),
+                   path('ekson/', include('eweb.urls')),
                ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

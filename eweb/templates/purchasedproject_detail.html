@@ -1,0 +1,10 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>{{ purchased_project }}</h1>
+  <p>Purchase Date: {{ purchased_project.purchase_date }}</p>
+  <p>Expert Share: {{ purchased_project.expert_share }}%</p>
+  <p>Project: {{ purchased_project.project.project_name }}</p>
+  <a href="{% url 'purchased_project_update' purchased_project.pk %}">Edit</a> |
+  <a href="{% url 'purchased_project_delete' purchased_project.pk %}">Delete</a>
+{% endblock %}

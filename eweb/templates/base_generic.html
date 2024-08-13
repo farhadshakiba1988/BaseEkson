@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Site{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>My Site</h1>
+        <nav>
+            <a href="{% url 'approved_project_list' %}">Approved Projects</a> |
+            <a href="{% url 'contract_company_list' %}">Contract Companies</a> |
+            <a href="{% url 'daily_activity_list' %}">Daily Activities</a> |
+            <a href="{% url 'foreign_purchase_expert_list' %}">Experts</a> |
+            <a href="{% url 'project_list' %}">Projects</a> |
+            <a href="{% url 'purchased_project_list' %}">Purchased Projects</a> |
+            <a href="{% url 'task_list' %}">Tasks</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 My Site</p>
+    </footer>
+</body>
+</html>

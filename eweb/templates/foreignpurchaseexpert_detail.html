@@ -1,0 +1,11 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>{{ foreign_purchase_expert }}</h1>
+  <p>Email: {{ foreign_purchase_expert.email }}</p>
+  <p>Phone Number: {{ foreign_purchase_expert.phone_number }}</p>
+  <p>Hire Date: {{ foreign_purchase_expert.hire_date }}</p>
+  <p>Position: {{ foreign_purchase_expert.position }}</p>
+  <a href="{% url 'foreign_purchase_expert_update' foreign_purchase_expert.pk %}">Edit</a> |
+  <a href="{% url 'foreign_purchase_expert_delete' foreign_purchase_expert.pk %}">Delete</a>
+{% endblock %}
