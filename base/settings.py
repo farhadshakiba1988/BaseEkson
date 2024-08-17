@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-^3kanr=c%#&pwwn!%=ti84s@v+jv@kcvk!r!+=rg@au$$-wnk-"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -50,7 +50,6 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "conf",
     "web",
-    "eweb",
 ]
 
 MIDDLEWARE = [

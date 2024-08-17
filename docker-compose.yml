@@ -3,7 +3,7 @@ services:
   app:
     build:
       context: .
-    command: ["/wait-for-it.sh", "db", "/entrypoint.sh"]
+    command: [ "/wait-for-it.sh", "db", "/entrypoint.sh" ]
     ports:
       - '8080:8000'
     volumes:
@@ -30,6 +30,19 @@ services:
       - POSTGRES_DB=test
       - POSTGRES_USER=test
       - POSTGRES_PASSWORD=123@456
+
+  nginx:
+    build: ./nginx
+    container_name: nginx
+    ports:
+      - "80:80"
+    volumes:
+      #      - ./nginx:/etc/nginx/conf.d
+      - ./static:/app/static
+      - ./media:/app/media
+
+
 volumes:
   static_volume:
+  media_volume:
   postgres-data:
